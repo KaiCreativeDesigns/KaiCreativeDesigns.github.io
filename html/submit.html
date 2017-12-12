@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kaila Baker's Portfolio</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Qwigley">
+
+
+
+
+<style>
+.w3-myfont {
+   font-family: 'Qwigley', cursive}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    background-color: #4bbac1;
+
+}
+
+
+
+/* Full height image header */
+
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: none;
+    min-height: 100%;
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  opacity: 0.5;
+}
+
+/* Dropdown Sidebar*/
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4bbac1;
+    background-color: #4bbac1;
+    overflow-y: hidden;
+    transition: 0.5s;
+    opacity: .95;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+}
+
+</style>
+</body>
+</head>
+
+<body>
+<nav>
+<!-- Dropdown sidebar -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content w3-center">
+    <div class="content-a">
+    <a href="html/resume.html">  <i class="fa fa-user w3-xlarge"></i> resume </a>
+    <a href="html/projects.html">  <i class="fa fa-th w3-xlarge"></i> projects </a>
+    <a href="html/contact.html">  <i class="fa fa-envelope w3-xlarge"></i> contact </a>
+</div>
+
+
+
+
+
+</nav>
+
+
+
+<!-- Header with full-height image -->
+
+<
+</div>
+<div class="container" style="opacity:.25">
+  <center><img src="/pix/logos/logowhite.png" style="width:50%;height50%"></img></center></div>
+<div class="centered w3-large w3-text-white">
+
+<h1> Thank you for your message!</h1>
+<center><p class="w3-xlarge w3-text-gray"> Talk to you soon!<br>
+<a href="/html/contact.html"><button class="w3-button-white w3-border-white w3-medium w3-round-large w3-hover-shadow">
+  <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to Contacts </button> </a></p>
+
+</center>
+    </div>
+    <div>
+
+
+  <br>
+
+
+
+
+
+
+    </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+  </i>
+    <a href="https://www.facebook.com/kaila.m.bug" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:white" target="_blank">
+        <i class="fa fa-facebook-official w3-hover-opacity"> </i></a>
+    <a href="https://www.instagram.com/do0dle_bug12/?hl=en" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:white"target="_blank">
+        <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/do0dle_bug12" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:white" target="_blank">
+        <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/kaila-baker12/" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:white" target="_blank">
+        <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+  </div>
+</header>
+
+
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+
+
+
+</body>
+</html>

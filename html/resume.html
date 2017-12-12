@@ -70,34 +70,22 @@ body {
   </div>
 
 </nav>
+<header>
+<center>
+  <br><a href="../index.html"> <img src="/pix/logos/logoblack.png" style="width:25%;height25%;"></img> </a> </center>
 
-</style>
-</head>
+<div class="w3-row w3-centered">
+  <center><h1 class="w3-myfont w3-jumbo"> Resume </h1> </center></div>
+</header>
 <body>
 
-  <div class="w3-row">
-  <div class="w3-quarter w3-container">
-    <h1 class="w3-jumbo w3-myfont">
-     <a href=".../index.html">
-       <img src="/pix/logos/logosmall.png" alt="logo" style="width:12%;height12%"></a>
-     Resume </h1>
-  </div>
-  <div class="w3-half">
     <div class="w3-row">
       <div class="w3-col w3-container" style="width:80px"> </br>
         <p><a href="/links/resume.pdf"<button class="w3-btn w3-round w3-medium"
              style="background-color:#4bbac1" target="_blank">download</button></a></p>
            </div>
-      </div>
-</div>
-<br>
 
 
-        </div>
-        <div class="w3-col w3-container" style="150px"><br>
-          <p><a href="/links/resume.pdf"<button class="w3-btn w3-round w3-large"
-              style="background-color:#4bbac1" target="_blank">download</button></a></p>
-            </div>
 
 </div>
 <hr>
@@ -107,7 +95,7 @@ body {
 </div>
 
 <div class="w3-twothird w3-container"><br>
-  <h2>Inspired I Creator I Leader </h2>
+  <h2 class="w3-text-white">Inspired I Creator I Leader </h2>
   <p>Kaila Baker has her Associate Degree in Graphic Design.
     She attends University of Connecticut (UConn) working towards her Bachelor's Degree in Digital Media and Design.
     Kaila is the Editor-in-Chief/President of the University’s Student Publication,1UPL.
@@ -139,26 +127,20 @@ body {
 
 
 
-
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
-    </div>
-  </div>
-</div>
-
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-padding-64" style="background-color:white">
+  <a href="/html/resume.html" class="w3-button w3-round-large w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+    <a href="https://www.facebook.com/kaila.m.bug" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:#4bbac1" target="_blank">
+        <i class="fa fa-facebook-official w3-hover-opacity"> </i></a>
+    <a href="https://www.instagram.com/do0dle_bug12/?hl=en" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:#4bbac1"target="_blank">
+        <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/do0dle_bug12" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:#4bbac1" target="_blank">
+        <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/kaila-baker12/" class="w3-bar-item w3-button-transparent w3-hover-shadow" style="color:#4bbac1" target="_blank">
+        <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</div>
+</div>
 
 <!-- Add Google Maps -->
 <script>
@@ -171,22 +153,7 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
+f
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
